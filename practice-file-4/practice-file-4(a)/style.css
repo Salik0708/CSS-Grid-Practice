@@ -1,0 +1,32 @@
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* Note: The grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties. */
+
+/* Note: The grid-row property is a shorthand property for the grid-row-start and the grid-row-end properties. */
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}

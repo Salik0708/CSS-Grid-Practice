@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.5fr;
+  grid-template-rows: 1fr 4fr 3fr 2fr;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  grid-template-areas:
+    "main main header"
+    "main main candy"
+    "nom yum candy"
+    "diabeetus diabeetus candy";
+}
+
+main {
+  grid-area: main;
+  background-color: #ffdffd;
+}
+
+section.nom {
+  grid-area: nom;
+  background-color: #c4b35a;
+}
+
+section.yum {
+  grid-area: yum;
+  background-color: #333333;
+}
+
+section.diabeetus {
+  grid-area: diabeetus;
+  background-color: #202020;
+}
+
+header {
+  grid-area: header;
+  background-color: #375270;
+}
+
+div.candy {
+  grid-area: candy;
+  background-color: #e7636c;
+}
